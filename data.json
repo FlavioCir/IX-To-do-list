@@ -1,0 +1,14 @@
+{
+  "elenco": [
+    {
+      "titolo": "Spesa",
+      "contenuto": "Carote, Melanzane, Zucchine, Pasta",
+      "id": 1
+    },
+    {
+      "titolo": "Acqua & Sapone",
+      "contenuto": "Shampoo, Bagno Schiuma, Balsamo, Schiuma da barba",
+      "id": 2
+    }
+  ]
+}

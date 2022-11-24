@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet' integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'><script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js' integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container-fluid text-white text-center mb-5 mt-4 p-4">
+        <h1 class="p-4 fw-bold">TO DO LIST</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 mt-lg-5 mb-5">
+                <h3 class="text-center mb-5 text-white">FORM DI INSERIMENTO DATI</h3>
+                <form id="form">
+                    <fieldset class="border border-dark p-4 bg-white">
+                        <label for="titolo" class="form-label">TITOLO</label>
+                        <input type="text" id="titolo" class="form-control mb-2">
+                        <label for="contenuto" class="form-label">CONTENUTO</label>
+                        <input type="text" id="contenuto" class="form-control mb-2">
+                        <button type="button" class="btn btn-primary mt-3" id="scrivi">INVIA</button>
+                    </fieldset>
+                </form>
+                <h4 id="errore" class="text-white"></h4>
+            </div>
+            <div class="col-12 mt-5 col-lg-6 mt-lg-5 mb-5">
+                <h3 class="text-center mb-5 text-white">ELENCO</h3>
+                <h3 id="erroreElenco"></h3>
+                <table class="table table-striped table-hover table-bordered bg-white">
+                    <thead class="bg-dark text-white text-center">
+                        <tr>
+                            <th>CHECK</th>
+                            <th>ELIMINA</th>
+                            <th>MODIFICA</th>
+                            <th>TITOLO</th>
+                            <th>CONTENUTO</th>
+                        </tr>
+                    </thead>
+                    <tbody id="elenco" class="text-center"></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid mt-5" id="carosello">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active text-center text-white mt-5" data-bs-interval="3000">
+                        <h5>Step 1</h5>
+                        <p>Divertiti a creare la tua tabella personalizzata, inserendo tutti i nomi che vuoi!</p>
+                </div>
+                <div class="carousel-item text-center text-white mt-5" data-bs-interval="3000">
+                        <h5>Step 2</h5>
+                        <p>Potrai eliminare gli elementi della tabella cliccando il tasto <span class="border border-danger rounded text-danger"><i class="bi bi-trash3-fill p-2"></i></span>
+                        </p>
+                </div>
+                <div class="carousel-item text-center text-white mt-5"  data-bs-interval="3000">
+                        <h5>Step 3</h5>
+                        <p>Oppure hai la possibilità di modificare gli elementi già esistenti cliccando il tasto <span class="border border-success rounded text-success"><i class="bi bi-pencil-fill p-2"></i></span></p>
+                </div>
+                <div class="carousel-item text-center text-white mt-5" data-bs-interval="3000">
+                        <h5>Step 4</h5>
+                        <p>Ora che conosci tutte le funzionalità del form sta a te giocare e creare tutte le tabelle che vuoi!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="todolist.js"></script>
+</body>
+</html>
